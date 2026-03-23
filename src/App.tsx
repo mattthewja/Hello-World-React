@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Board from './components/objects/board/Board.tsx';
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +8,7 @@ export default function App() {
   return (
     <div>
       <p className="hello-world">Hello World</p>
+      <Board />
     </div>
   );
   
