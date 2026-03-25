@@ -7,7 +7,6 @@ export default function App() {
 
   return (
     <div>
-      <p className="hello-world">Hello World</p>
       <Board />
     </div>
   );

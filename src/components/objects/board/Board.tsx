@@ -1,37 +1,40 @@
 import './Board.css'
+import { useState } from 'react';
 
 type SquareProps = {
     value: string
 };
 
-function Square(Props : SquareProps) {
+function Square() {
+    const [value, setValue] = useState<string | null>(null);
+
     function handleClickSquare() {
-        // do something
+        setValue('X');
     }
 
     return (
-        <button className="square" onClick={handleClickSquare}>{Props.value}</button>
+        <button className="square" onClick={handleClickSquare}>{value}</button>
     )
 }
 
 export default function Board() {
     return (
-        <>
+        <div className="board">
             <div className="board-row">
-                <Square value="X"/>
-                <Square value="Y"/>
-                <Square value="Z"/>
+                <Square />
+                <Square />
+                <Square />
             </div>
             <div className="board-row">
-                <Square value="X"/>
-                <Square value="Y"/>
-                <Square value="Z"/>
+                <Square />
+                <Square />
+                <Square />
             </div>
             <div className="board-row">
-                <Square value="X"/>
-                <Square value="Y"/>
-                <Square value="Z"/>
+                <Square />
+                <Square />
+                <Square />
             </div>
-        </>
+        </div>
     )
 }
