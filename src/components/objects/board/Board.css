@@ -16,10 +16,10 @@
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
 
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); */
 }
 
 .board-row {
@@ -28,4 +28,5 @@
 
 ul, ol {
     list-style-type: none;
+    margin: 0; padding: 0;
 }
