@@ -1,3 +1,3 @@
-# Hello World React
+# Basic React Intro
 
-Basic thing
+Tic Tac Toe following <a href="https://react.dev/learn/tutorial-tic-tac-toe">this tutorial</a>
