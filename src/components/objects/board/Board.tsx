@@ -6,10 +6,24 @@ function Square() {
     )
 }
 
-export default function board() {
+export default function Board() {
     return (
         <>
-            <Square />
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
         </>
     )
 }
